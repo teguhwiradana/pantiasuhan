@@ -1,5 +1,5 @@
 <footer class="main-footer">
-    <strong>Copyright &copy; Redho <a href="/beranda">Panti Asuhan Izzati Jannah</a></strong> 
+    <strong>Copyright &copy;  <a href="/beranda">Panti Asuhan Izzati Jannah</a></strong> 
   </footer>
 
   <!-- Control Sidebar -->

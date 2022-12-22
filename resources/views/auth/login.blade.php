@@ -36,7 +36,7 @@
                             <div class="col-lg">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900">Panti Asuhan Jambi</h1>
+                                        <h1 class="h4 text-gray-900">Panti Asuhan Izzati Jannah Jambi</h1>
                                         <p>Login</p>
                                     </div>
                                     <form id="formAuthentication" class="user" action="{{route('login')}}" method="POST">

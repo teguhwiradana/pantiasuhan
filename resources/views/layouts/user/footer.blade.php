@@ -42,14 +42,14 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Redho</span></strong> UNAMA
+        &copy; Copyright <strong><span>Izzati Jannah</span></strong> Jambi
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
             Designed By <a href="#">HTML Codex</a>
-           <br>Distributed By: <a href="#" target="_blank">refaad</a>
+           <br>Distributed By: <a href="#" target="_blank">Lia</a>
       </div>
     </div>
   </footer><!-- End Footer -->
