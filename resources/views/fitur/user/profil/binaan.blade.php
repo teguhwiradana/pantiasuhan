@@ -5,7 +5,7 @@
   <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <h2 class="mb-4">Daftar Binaan Panti Asuhan</h2>
+            <h2 class="mb-4">Daftar Binaan Panti Asuhan Izzati Jannah</h2>
             <!-- <h6 class="text-black">Pengurus yang berada dalam susunan kepengurusan Panti Asuhan Izzati Jannah memiliki tugas sebagai berikut</h6> -->
         </div>
         <div>
