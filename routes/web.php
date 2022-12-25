@@ -47,9 +47,11 @@ Route::prefix('profil')->group(function () {
     Route::get('/struktur-kepengurusan',[KegiatanController::class, 'struktur']);
     Route::get('/visi ',[VisiController::class, 'visi']);
     Route::get('/kegiatan ',[KegiatanController::class, 'kegiatan']);
+    Route::get('/binaan',[BinaanController::class, 'binaan']);
 });
 Route::get('/galeri-panti',[KegiatanController::class, 'galeri']);
 Route::get('/kegiatan-panti',[KegiatanController::class, 'kegiatanDetail']);
+
 Route::get('/donasi',[DonasiContrroler::class, 'program']);
 Route::get('/formulir-donasi-panti',[DnsNoLoginController::class, 'form']);
 Route::post('/formulir-donasi-panti',[DnsNoLoginController::class, 'formulir']);

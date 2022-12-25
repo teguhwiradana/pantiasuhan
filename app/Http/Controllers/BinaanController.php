@@ -100,4 +100,8 @@ class BinaanController extends Controller
         return view('admin.donasi.binaan.indexBinaan', compact('paginate','title'))->with('i', 
         (request()->input('page', 1) - 1) * 5);
     }
+    public function binaan(){
+        $binaan = Binaan::all();
+        return view('fitur.user.profil.binaan',compact(['binaan']));
+    }
 }

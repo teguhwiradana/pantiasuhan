@@ -19,7 +19,7 @@
                 </div>
             </div>
             <a href="{{url('/galeri-panti')}}" class="nav-item nav-link text-white">Galeri</a>
-            <a href="{{url('/kegiatan-panti')}}" class="nav-item nav-link text-white">Kegiatan</a>
+            <a href="{{url('/profil/binaan')}}" class="nav-item nav-link text-white">Anak Asuh</a>
             <a href="{{url('/donasi')}}" class="nav-item nav-link text-white">Donasi</a>
 
             <!-- <a href="{{url('/produk')}}" class="nav-item nav-link text-white">Catering</a> -->
