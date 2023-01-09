@@ -17,6 +17,7 @@ class Pengguna extends Model
         'alamat',
         'nohp',
         'role',
+        'jabatan'
     ];
 
 }

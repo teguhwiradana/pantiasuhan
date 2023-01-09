@@ -26,6 +26,8 @@ use App\Http\Controllers\RekapPesanController;
 use App\Http\Controllers\TipeProdukController;
 use App\Http\Controllers\PenggunaController;
 use App\Http\Controllers\updatePenggunaAll;
+use App\Http\Controllers\LaporanController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -112,6 +114,10 @@ Route::middleware(['auth', 'admin'])->group(function (){
     Route::get('pesan/cetak/data', [RekapPesanController::class, 'cetak'])->name('pesan.cetak');
 
     Route::resource('tipe', TipeProdukController::class);
+
+    route::get('cetak/laporan/donasi',[LaporanController::class,'donasi'])->name('laporan.donasi');
+    route::get('cetak/laporan/binaan',[LaporanController::class,'binaan'])->name('laporan.binaan');
+    route::get('cetak/laporan/kegiatan',[LaporanController::class,'kegiatan'])->name('laporan.kegiatan');
 });
 
 Route::middleware(['auth', 'user'])->group(function (){

@@ -52,6 +52,7 @@
                           <th>Alamat</th>
                           <th>No HP</th>
                           <th>Role</th>
+                          <th>Jabatan</th>
                           <th>Aksi</th>
                       </tr>
                       </thead>
@@ -64,6 +65,7 @@
                           <td class="text-black">{{ $pgn->alamat}}</td>
                           <td class="text-black">{{ $pgn->nohp}}</td>
                           <td class="text-black">{{ $pgn->role}}</td>
+                          <td class="text-black">{{$pgn->jabatan}}</td>
                           <td>
                             <form action="{{ route('pengguna.destroy',$pgn->id) }}" method="POST">
                               <a class="btn btn-warning" href="{{ route('pengguna.edit',$pgn->id) }}"><i class="fa fa-edit"></i></a>

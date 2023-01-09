@@ -54,19 +54,21 @@ class PenggunaController extends Controller
         return view('admin.pengguna.edit', compact('pengguna','title'));
     }
 
-    public function update(Request $request)
+    public function update(Request $request,$id)
     {
-         //melakukan validasi data
-         $request->validate([
-            'name' => 'required',
-            'email' => 'required',
-            'password' => 'required',
-            'alamat' => 'required',
-            'nohp' => 'required',
-            'role' => 'required',
-        ]);
+        //  //melakukan validasi data
+        //  $request->validate([
+        //     'name' => 'required',
+        //     'email' => 'required',
+        //     // 'password' => 'required',
+        //     'alamat' => 'required',
+        //     'nohp' => 'required',
+        //     'role' => 'required',
+        // ]);
 
-        $pengguna = new Pengguna();
+        $pengguna = Pengguna::find($id);
+
+        dd($request->all());
         $pengguna->name = $request->name;
         $pengguna->email = $request->email;
         $pengguna->password = $request->password;

@@ -15,6 +15,7 @@
         </div>
         <div class="info">
           <a href="#" class="d-block">{{ Auth::user()->name }}</a>
+          <small class="text-light">{{Auth::user()->jabatan}}</small>
         </div>
       </div>
 
@@ -32,6 +33,7 @@
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
+        @if(Auth::user()->jabatan == 'admin')
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
@@ -199,6 +201,28 @@
             </form>
           </li>
         </ul>
+        @endif
+        @if(Auth::user()->jabatan == 'direktur'|| (Auth::user()->jabatan == 'sekretaris')|| (Auth::user()->jabatan == 'bendahara'))    
+        <ul class="nav nav-treeview">
+
+          <li class="nav-item "><a class="nav-link" href="/dashboard"><i class="far fa-circle nav-icon"></i> Dashboard</a></li>
+          <li class="nav-item "><a class="nav-link" href="{{route('laporan.kegiatan')}}"><i class="far fa-circle nav-icon"></i> Laporan Kegiatan</a></li>
+          <li class="nav-item "><a class="nav-link" href="{{route('laporan.donasi')}}"><i class="far fa-circle nav-icon"></i> Laporan Donasi</a></li>
+          <li class="nav-item "><a class="nav-link" href="{{route('laporan.binaan')}}"><i class="far fa-circle nav-icon"></i> Laporan Binaan</a></li>
+          <li class="nav-item">
+            <a href="{{ route('logout') }}" class="nav-link"
+                onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">
+                <i class="far fa-circle nav-icon"></i>
+                {{ __('Logout') }}
+            </a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+          </li>
+        </ul>
+        @endif
       </nav>
       <!-- /.sidebar-menu -->
     </div>
