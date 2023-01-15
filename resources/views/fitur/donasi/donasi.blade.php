@@ -79,6 +79,7 @@
                   </div>
                 </div>
               </div>
+              @auth
               <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="service-item rounded">
                   <div class="position-relative p-4 pt-0">
@@ -107,6 +108,7 @@
                   </div>
                 </div>
               </div>
+              @endauth
             </div>
           </div>
         </div>

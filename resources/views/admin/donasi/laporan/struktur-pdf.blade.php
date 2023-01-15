@@ -16,35 +16,22 @@
     </style>
 </head>
 <body>
-    <h2 align="center">LAPORAN ANAK ASUH</h2>
+    <h2 align="center">LAPORAN Kegiatan</h2>
     <h3 align="center">Izzati Jannah</h3>
     <h4 align="center">Danau Sipin Jl. Masjid Nurul Jannah, Selamat, Kota Jambi</h4>
     <hr>
     <table>
         <tr>
-            <th>Nama Anak</th>
-            <th>Tempat, Tanggal Lahir</th>
-            <th>Jenis Kelamin</th>
-            <th>Umur</th>
-            <th>Status</th>
-
+            <th>Nama</th>
+            <th>Jabatan</th>
         </tr>
         @foreach($data as $data)
         <tr>
             <td>
-                {{$data->nama_binaan}}
+                {{$data->nama}}
             </td>
             <td>
-                {{$data->ttl}}
-            </td>
-            <td>
-                {{$data->jekel}}
-            </td>
-            <td>
-                {{$data->umur}}
-            </td>
-            <td>
-                {{$data->status}}
+                {{$data->jabatan}}
             </td>
         </tr>
         @endforeach

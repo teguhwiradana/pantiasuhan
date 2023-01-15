@@ -118,6 +118,7 @@ Route::middleware(['auth', 'admin'])->group(function (){
     route::get('cetak/laporan/donasi',[LaporanController::class,'donasi'])->name('laporan.donasi');
     route::get('cetak/laporan/binaan',[LaporanController::class,'binaan'])->name('laporan.binaan');
     route::get('cetak/laporan/kegiatan',[LaporanController::class,'kegiatan'])->name('laporan.kegiatan');
+    route::get('cetak/laporan/struktur',[LaporanController::class,'struktur'])->name('laporan.struktur');
 });
 
 Route::middleware(['auth', 'user'])->group(function (){
