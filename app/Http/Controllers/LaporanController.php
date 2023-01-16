@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Program;
 use App\Models\Binaan;
 use App\Models\Kegiatan;
+use App\Models\Struktur;
 use PDF;
 
 class LaporanController extends Controller
