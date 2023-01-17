@@ -209,7 +209,7 @@
           <li class="nav-item "><a class="nav-link" href="{{route('laporan.kegiatan')}}"><i class="far fa-circle nav-icon"></i> Laporan Kegiatan</a></li>
           <li class="nav-item "><a class="nav-link" href="{{route('laporan.donasi')}}"><i class="far fa-circle nav-icon"></i> Laporan Donasi</a></li>
           <li class="nav-item "><a class="nav-link" href="{{route('laporan.binaan')}}"><i class="far fa-circle nav-icon"></i> Laporan Binaan</a></li>
-          <li class="nav-item "><a class="nav-link" href="{{route('laporan.struktur')}}"><i class="far fa-circle nav-icon"></i> Laporan Sturktur</a></li>
+          <li class="nav-item "><a class="nav-link" href="{{route('laporan.struktur')}}"><i class="far fa-circle nav-icon"></i> Laporan Struktur</a></li>
           <li class="nav-item">
             <a href="{{ route('logout') }}" class="nav-link"
                 onclick="event.preventDefault();

@@ -17,7 +17,7 @@
 </head>
 <body>
     <h3 align="center">PANTI ASUHAN IZZATI JANNAH</h3>
-    <h2 align="center">LAPORAN STRUKTUR KEPENGURUSAN</h2>
+    <h4 align="center">LAPORAN STRUKTUR KEPENGURUSAN</h4>
     <h4 align="center">Danau Sipin Jl. Masjid Nurul Jannah, Selamat, Kota Jambi</h4>
     <hr>
     <table>
@@ -28,7 +28,7 @@
         @foreach($data as $data)
         <tr>
             <td>
-                {{$data->nama}}
+                {{$data->name}}
             </td>
             <td>
                 {{$data->jabatan}}

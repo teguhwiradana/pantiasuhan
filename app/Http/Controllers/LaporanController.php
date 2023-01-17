@@ -35,7 +35,7 @@ class LaporanController extends Controller
 
         return $pdf->stream('kegiatan.pdf');
     }
-    public function jabatan(){
+    public function struktur(){
         $data = Struktur::all();
         $pdf = PDF::loadview('admin.donasi.laporan.struktur-pdf',compact(['data']));
         return $pdf->stream('struktur.pdf');
